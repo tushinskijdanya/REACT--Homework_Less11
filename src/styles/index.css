@@ -1,0 +1,473 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1300px;
+  /* overflow: hidden; */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  background: #c093e8;
+  height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 402px;
+}
+
+.layout-nav {
+  display: flex;
+  gap: 35px;
+}
+
+.exile {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Geologica';
+  font-weight: 300;
+}
+
+.active {
+  color: #165b93;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 60px;
+  font-family: 'Geologica';
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.footer-context {
+  padding: 0 20px 0 20px;
+  display: flex;
+  gap: 50px;
+}
+
+.message-me {
+  cursor: pointer;
+}
+
+.blog-main_content {
+  padding: 90px 0 180px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+}
+
+.about-container {
+  width: 100%;
+  background: #c093e8;
+}
+
+.about-content {
+  width: 1300px;
+  background: #c093e8;
+  display: flex;
+  margin: 0 auto;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog_post {
+  display: flex;
+  gap: 57px;
+  margin-bottom: 36px;
+}
+
+.blog_image {
+  width: 423px;
+  height: 180px;
+  border-radius: 7px;
+}
+
+.blog_content {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line {
+  border-bottom: 1px solid rgb(160, 146, 146);
+  width: 100%;
+}
+
+.blog-title {
+  font-family: 'Geologica';
+  font-weight: 700;
+  font-size: 30px;
+  color: #0e0f0f;
+  cursor: pointer;
+  /* text-decoration: none; */
+  margin-bottom: 15px;
+}
+
+.blog-stage {
+  font-family: 'Geologica';
+  font-weight: 300;
+  font-size: 19px;
+  color: #0e0f0f;
+}
+
+.post-page_content {
+  padding: 90px 0 180px 0;
+}
+
+.post-title {
+  font-family: 'Geologica';
+  font-weight: 700;
+  font-size: 45px;
+  color: #000000;
+  margin-bottom: 70px;
+}
+
+.post-image {
+  float: left;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.postImage {
+  height: 350px;
+}
+
+.post-body_content {
+  padding-top: 170px;
+}
+
+.post-body {
+  font-family: 'Geologica';
+  font-weight: 300;
+  font-size: 26px;
+  color: #000000;
+}
+
+.none {
+  display: none;
+}
+
+.create-post {
+  padding-top: 25px ;
+  padding-bottom: 180px;
+}
+
+.create-post_title {
+  font-family: 'Geologica';
+  font-weight: 700;
+  font-size: 45px;
+  color: #bdbb0e;
+  margin-bottom: 70px;
+  margin-bottom: 30px;
+}
+
+.createForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.choosepage-content {
+  position: absolute;
+  bottom: 105px;
+  right: 302px;
+}
+
+.choosepage-img_content {
+  position: relative;
+  min-height: 455px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+
+.left-button_container,
+.right-button_container,
+.close-button-block {
+  position: absolute;
+  top: 45%;
+}
+
+.left-button_container {
+  left: 15px;
+}
+
+.right-button_container {
+  right: 15px;
+}
+
+.close-button-block {
+  top: 25px;
+  right: 25px;
+}
+
+.left-button,
+.right-button,
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.left-button img,
+.right-button img {
+  height: 40px;
+}
+
+.left-button img:hover,
+.right-button img:hover {
+  height: 50px;
+}
+
+.choose-button_block {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.choose-button {
+  width: 200px;
+  height: 40px;
+  background-color: #165b9378;
+  cursor: pointer;
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 25px;
+  color: #c0f8f8a1;
+}
+
+.createForm input,
+.createForm textarea {
+  padding: 10px 15px 10px 15px;
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+}
+
+.createForm input::placeholder,
+.createForm textarea::placeholder {
+  font-size: 18px;
+  color: #000000a1;
+}
+
+.createForm input:focus,
+.createForm textarea:focus {
+  outline:none;
+}
+
+.title-input {
+  width: 900px;
+}
+
+.stage-input {
+  width: 1000px;
+  height: 200px;
+}
+
+.blog-input {
+  width: 1000px;
+  height: 500px;
+}
+
+.choose_active-button {
+  width: 1000px;
+  height: 37px;
+  cursor: pointer;
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.save-button {
+  width: 200px;
+  height: 50px;
+  background: rgb(26, 225, 26);
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 25px;
+  position: relative;
+  left: 800px;
+  bottom: -30px;
+}
+
+.save-button:active {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.save-button:disabled {
+  box-shadow: none;
+  background: rgb(121, 184, 121);
+}
+
+.deleteRecipe-button {
+  cursor: pointer;
+  border-bottom: 1px solid rgb(179, 167, 167);
+  color: rgb(179, 167, 167);
+  position: relative;
+  right: -700px;
+}
+
+.deleteRecipe-button:hover {
+  border-bottom: 1px solid rgb(203, 148, 76);
+  color: rgb(203, 148, 76);
+}
+
+.quantityRecipes {
+  padding-top: 90px;
+  max-width: 500px;
+  color: #ff0099a2;
+  font-family: 'Amatic SC';
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.quantityRecipes-change {
+  color: #cd0909;
+}
+
+.notes-container {
+  padding-top: 50px;
+  padding-bottom: 180px;
+}
+
+.newNote-title {
+  font-family: 'Geologica';
+  font-weight: 600;
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.new-note {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+
+.newNote-input {
+  width: 1100px;
+  height: 400px;
+  padding: 15px 30px 15px 30px;
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 25px;
+  color: #2f2d2d;
+  margin-bottom: 15px;
+}
+
+.newNote-input:focus {
+  outline:none;
+}
+
+.newNotes-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.saveNewNote,
+.clearNewNote {
+  cursor: pointer;
+  width: 170px;
+  height: 50px;
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 19px;
+  color: #fff4f4;
+}
+
+.saveNewNote {
+  background: rgb(75, 174, 75);
+}
+
+.clearNewNote {
+  background: #3f5262;
+}
+
+.allNotes {
+  padding-top: 30px;
+}
+
+.allNotes-title {
+  font-family: 'Geologica';
+  font-weight: 500;
+  font-size: 40px;
+  color: #23d73b;
+  text-decoration: none;
+}
+
+.allNotes-quant {
+  color: #45616c;
+}
+
+.allNotes-title.disabled {
+  pointer-events: none
+}
+
+.allNotes_container {
+  padding-top: 70px;
+  padding-bottom: 180px;
+  max-width: 1000px;
+}
+
+.backNote-button {
+  margin-bottom: 35px;
+  width: 100px;
+  height: 35px;
+  background: #bdbb0e;
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 19px;
+  color: #271818;
+  cursor: pointer;
+}
+
+.allNotes_content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.note_post {
+  display: inline-block;
+  word-break: break-all;
+  min-width: 1000px;
+  padding: 15px;
+  border: 2px solid seagreen;
+  border-radius: 5px;
+}
+
+.note_post-buttons {
+  display: flex;
+  gap: 30px;
+  padding-top: 25px;
+}
+
+.note_content-text {
+  font-family: 'Geologica';
+  font-weight: 400;
+  font-size: 25px;
+  color: #2f2d2d;
+}
